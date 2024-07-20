@@ -29,7 +29,7 @@ public class functionalTesting {
         if (x >= 10 || y >= 5000) {
             return 10; // 10%
         }
-        return 0;
+        return 0; // 0%
     }
 
     public static String Test(int x, int y, int expect) {
