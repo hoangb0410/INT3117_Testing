@@ -54,6 +54,24 @@ public class Testing {
             int expected = testCase[2];
             System.out.println("Test(" + x + ", " + y + ", " + expected + "): " + Test(x, y, expected));
         }
+
+        // Kiem thu dong du lieu voi do phu all-uses
+        int[][] testCases4 = {
+                { 0, 0, -1 },
+                { 11, 5500, 20 },
+                { 12, 6000, 20 },
+                { 11, 4000, 10 },
+                { 9, 6000, 10 },
+                { 5, 1000, 0 }
+
+        };
+        System.out.println("Kiem thu dong du lieu voi do phu all-uses:");
+        for (int[] testCase : testCases4) {
+            int x = testCase[0];
+            int y = testCase[1];
+            int expected = testCase[2];
+            System.out.println("Test(" + x + ", " + y + ", " + expected + "): " + Test(x, y, expected));
+        }
     }
 
     public static int Discount(int x, int y) {
